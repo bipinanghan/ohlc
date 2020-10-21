@@ -2,7 +2,7 @@
 
 ## PROBLEM : 
 
-**There are some trades in trades.json file and we need to read that data and send to client who is connected throgh tocket base in 15 min interval if stock data is like that way.**
+**There are some trades in trades.json file and we need to read that data and send to client who is connected throgh socket base in 15 min interval if stock data is like that way.**
 
 
 ----------------------------------------------------------------------
