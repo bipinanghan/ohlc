@@ -41,7 +41,5 @@
 	Keep registering for some more stock OHLC and enjoy tick updates.
 
 ----------------------------------------------------------------------
-
-----------------------------------------------------------------------
 ### Contact :
 **For any queries / issues , Please contact me @ _bipin.anghan@gmail.com_** 
