@@ -18,7 +18,8 @@
 
 **Application is build using Spring boot + Embedded Jetty container + Jetty WebSocket API.**
 
-* Goto project directory and run below command which will create upstoxohlc-0.0.1-SNAPSHOT.war
+* Goto project directory and run below command which will create ohlc-0.0.1-SNAPSHOT.war  (also it is avaialable in target folder so you can run directly)
+	maven clean
 	maven install
 
    This step takes while and generate fat war file for execution under build/libs as upstoxohlc-0.0.1-SNAPSHOT.war
@@ -28,8 +29,8 @@
 	java  -Dtrade.file.path=<Absolute path of trade file liek g:/trades.json ]> -jar upstoxohlc-0.0.1-SNAPSHOT.war
 	
 	 Example 
-          Window : java -Dtrade.file.path=G\\trades.json -jar upstoxohlc-0.0.1-SNAPSHOT.war
-          Ubuntu : java -Dtrade.file.path=/home/trades.json -jar upstoxupstoxohlc-0.0.1-SNAPSHOT.war
+          Window : java -Dtrade.file.path=G\\trades.json -jar ohlc-0.0.1-SNAPSHOT.war
+          Ubuntu : java -Dtrade.file.path=/home/trades.json -jar ohlc-0.0.1-SNAPSHOT.war
 	
 	Application will start processing trades one by one and keep on generating OHLC for stock symbol.
 	
