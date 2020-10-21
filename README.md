@@ -42,12 +42,6 @@
 
 ----------------------------------------------------------------------
 
-### Assumption :
-
-> FileReaderStockTickProvider keeps reading symbol tick in an interval of 100ms
-
-> Complete system is based on in-memory data structures like HashMap, & HashSet and doesn't store any data in DBMS.
-
 ----------------------------------------------------------------------
 ### Contact :
 **For any queries / issues , Please contact me @ _bipin.anghan@gmail.com_** 
