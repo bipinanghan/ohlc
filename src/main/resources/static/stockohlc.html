@@ -1,0 +1,60 @@
+<html>
+<head>
+  <title>Upstox Demo : OHLC Streaming</title>
+  <script src="/js/websocket.js"></script>
+  <script type="text/javascript">
+   
+   function subscribe(){
+	   
+	   var myForm = document.getElementById('subscribe');
+	   var formData = new FormData(myForm);
+	   var object = {};
+	   formData.forEach((value, key) => {object[key] = value});
+	   var json = JSON.stringify(object);
+	   console.log(json);
+	   ws.send(json);
+   }
+   </script>
+    <style>
+        .header {
+		  padding: 10px;
+		  text-align: center;
+		  background: #1abc9c;
+		  color: white;
+		  font-size: 30px;
+		}
+		.center{
+			height:auto !important;
+			height:50px			
+		}
+
+    </style>
+</head>
+<body>
+<span>
+<div id ="subscribing" align="center">
+   <h1 class="header">Welcome to Upstox OHLC Live </h1>
+   <form id="subscribe">
+   	<input type="hidden" name="event" value="subscribe">
+   		Symbol : <input type="text" name="symbol" />
+   		<br/>
+   		<br/>
+   	<div align="center">	<button type="button" onclick="subscribe();"> Subscribe</button> </div>
+   </form>
+</div>
+<div id ="stockOhlc" style="hight:100%" class="center" align="center">    
+</div>
+<br/>
+
+<div id ="stockOhlc" style="hight:100%" class="center" align="center">    
+Bar Number : <div id="barNum"></div><br/>
+	  Open : <div id="open"></div><br/>
+      High : <div id="high"></div><br/>
+	  Low  : <div id="low"></div><br/>
+     Close : <div id="close"></div><br/>
+</div>
+</span>
+
+
+</body>
+</html>
