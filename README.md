@@ -22,11 +22,11 @@
 	maven clean
 	maven install
 
-   This step takes while and generate fat war file for execution under build/libs as upstoxohlc-0.0.1-SNAPSHOT.war
+   This step takes while and generate fat war file for execution under build/libs as ohlc-0.0.1-SNAPSHOT.war
    
-* Goto build/libs folder and type following command on terminal / cmd, 
+* Goto  our project where ohlc-0.0.1-SNAPSHOT.war is available (target folder) , 
  
-	java  -Dtrade.file.path=<Absolute path of trade file liek g:/trades.json ]> -jar upstoxohlc-0.0.1-SNAPSHOT.war
+	java  -Dtrade.file.path=<Absolute path of trade file liek g:/trades.json ]> -jar ohlc-0.0.1-SNAPSHOT.war
 	
 	 Example 
           Window : java -Dtrade.file.path=G\\trades.json -jar ohlc-0.0.1-SNAPSHOT.war
